@@ -6,6 +6,7 @@ import HeroImage from "./HeroImage";
 const StyledHero = styled.div`
   display: flex;
   justify-content: center;
+  height: 100vh;
 `;
 
 const Hero = () => {
