@@ -18,6 +18,7 @@ export const GlobalStyle = createGlobalStyle`
 body {
     background: ${props => props.theme.background};
     overflow-x: hidden;
+    margin: 0;
 }`
 
 export {darkTheme, lightTheme}

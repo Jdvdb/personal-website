@@ -1,6 +1,7 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
 import Main from "../components/Main";
+import Navbar from "../components/Navbar";
 import Hero from "../components/hero/Hero";
 import About from "../components/about/About";
 import { darkTheme, GlobalStyle, lightTheme } from "../styles/globalStyles";
@@ -22,6 +23,7 @@ const IndexPage = () => {
   return (
     <ThemeProvider theme={colourTheme === "light" ? lightTheme : darkTheme}>
       <GlobalStyle />
+      <Navbar />
       <Main>
         <Hero />
         <input
