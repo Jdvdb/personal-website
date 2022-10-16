@@ -31,6 +31,10 @@ const IndexPage = () => {
           checked={colourTheme === "light"}
           onChange={(e) => {
             setColourTheme(e.target.checked ? "light" : "dark");
+            const newTheme = e.target.checked ? "light" : "dark";
+            const root = window.document.documentElement;
+            localStorage.setItem("colour-mode", newTheme);
+            root.style.setProperty("--colour-mode", newTheme);
           }}
         />
         <About />

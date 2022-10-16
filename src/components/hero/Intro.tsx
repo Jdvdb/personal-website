@@ -10,9 +10,11 @@ const Intro = () => {
   return (
     <HalfDiv>
       <Header>
-        Hello! I'm Jordan
+        Hello!
         <br />
-        Van Den Bruel!
+        I'm Jordan
+        <br />
+        Van Den Bruel
       </Header>
     </HalfDiv>
   );
