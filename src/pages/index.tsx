@@ -24,6 +24,13 @@ const IndexPage = () => {
       <GlobalStyle />
       <Main>
         <Hero />
+        <input
+          type="checkbox"
+          checked={colourTheme === "light"}
+          onChange={(e) => {
+            setColourTheme(e.target.checked ? "light" : "dark");
+          }}
+        />
         <About />
       </Main>
     </ThemeProvider>

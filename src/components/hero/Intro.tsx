@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import HalfDiv from "../halfdiv";
+import HalfDiv from "../HalfDiv";
 
 const Header = styled.h1`
   color: ${(props) => props.theme.text};

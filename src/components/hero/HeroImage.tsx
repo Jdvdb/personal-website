@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Headshot from "../../images/Headshot.png";
-import HalfDiv from "../halfdiv";
+import HalfDiv from "../HalfDiv";
 
 const Image = styled.img`
   width: 25%;
