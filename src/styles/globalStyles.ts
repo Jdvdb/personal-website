@@ -14,7 +14,7 @@ const lightTheme: DefaultTheme = {
     text: '#077187',
 };
 
-export const GlobalStyle = createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
 body {
     background: ${props => props.theme.background};
     overflow-x: hidden;
@@ -23,16 +23,18 @@ body {
 }
 
 &::-webkit-scrollbar {
-    width: 16px;
+    width: 20px;
     background: rgba(0, 0, 0, 0);
 }
 
 &::-webkit-scrollbar-thumb {
-    background-color: ${props => props.theme.text};
+    background: ${props => props.theme.text};
     border-radius: 20px;
     border: 6px solid rgba(0, 0, 0, 0);
     background-clip: padding-box;
 }`
+
+export default GlobalStyle;
 
 export {darkTheme, lightTheme}
 

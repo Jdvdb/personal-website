@@ -1,10 +1,11 @@
-import React from "react";
+import React, { createContext, useContext } from "react";
 import { ThemeProvider } from "styled-components";
 import Main from "../components/Main";
 import Navbar from "../components/Navbar";
 import Hero from "../components/hero/Hero";
 import About from "../components/about/About";
-import { darkTheme, GlobalStyle, lightTheme } from "../styles/globalStyles";
+import GlobalStyle from "../styles/globalStyles";
+import { darkTheme, lightTheme } from "../styles/globalStyles";
 
 const IndexPage = () => {
   const [colourTheme, setColourTheme] = React.useState("");
@@ -18,27 +19,30 @@ const IndexPage = () => {
   }, []);
 
   if (colourTheme === "") {
+    console.log("loading default");
     return null;
   }
   return (
     <ThemeProvider theme={colourTheme === "light" ? lightTheme : darkTheme}>
       <GlobalStyle />
-      <Navbar />
-      <Main>
-        <Hero />
-        <input
-          type="checkbox"
-          checked={colourTheme === "light"}
-          onChange={(e) => {
-            setColourTheme(e.target.checked ? "light" : "dark");
-            const newTheme = e.target.checked ? "light" : "dark";
-            const root = window.document.documentElement;
-            localStorage.setItem("colour-mode", newTheme);
-            root.style.setProperty("--colour-mode", newTheme);
-          }}
-        />
-        <About />
-      </Main>
+      <section>
+        <Navbar />
+        <Main>
+          <Hero />
+          <input
+            type="checkbox"
+            checked={colourTheme === "light"}
+            onChange={(e) => {
+              setColourTheme(e.target.checked ? "light" : "dark");
+              const newTheme = e.target.checked ? "light" : "dark";
+              const root = window.document.documentElement;
+              localStorage.setItem("colour-mode", newTheme);
+              root.style.setProperty("--colour-mode", newTheme);
+            }}
+          />
+          <About />
+        </Main>
+      </section>
     </ThemeProvider>
   );
 };

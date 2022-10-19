@@ -31,5 +31,11 @@ exports.onRenderBody = ({ setPreBodyComponents }) => {
           root.style.setProperty("--colour-background", colourMode === 'light' ? '#E9E6FF' : '#0A0903');`,
       }}
     />,
+    <style>
+      {`body {
+      background: var(--colour-background);
+      height: 100vh;
+      }`}
+    </style>,
   ]);
 };
