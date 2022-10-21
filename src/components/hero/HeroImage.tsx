@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Headshot from "../../images/HeadshotTall.png";
 import HalfDiv from "../HalfDiv";
 
-const Wrapper = styled.div`
+const ImageWrapper = styled.div`
   position: relative;
   height: 30em;
   width: 35vw;
@@ -57,7 +57,7 @@ const HighlightValue = styled.p`
 const HeroImage = () => {
   return (
     <HalfDiv>
-      <Wrapper>
+      <ImageWrapper>
         <FloatingHighlights topVal={"4em"}>
           <HighlightNumber>6+</HighlightNumber>
           <HighlightValue>
@@ -83,7 +83,7 @@ const HeroImage = () => {
           </HighlightValue>
         </FloatingHighlights>
         <Image src={Headshot} />
-      </Wrapper>
+      </ImageWrapper>
     </HalfDiv>
   );
 };
