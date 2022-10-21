@@ -1,5 +1,5 @@
 import React from "react";
-import styled, { DefaultTheme } from "styled-components";
+import styled from "styled-components";
 import Headshot from "../../images/HeadshotTall.png";
 import HalfDiv from "../HalfDiv";
 

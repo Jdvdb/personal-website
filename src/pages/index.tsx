@@ -29,6 +29,7 @@ const IndexPage = () => {
         <Navbar />
         <Main>
           <Hero />
+          <About />
           <input
             type="checkbox"
             checked={colourTheme === "light"}
@@ -40,7 +41,6 @@ const IndexPage = () => {
               root.style.setProperty("--colour-mode", newTheme);
             }}
           />
-          <About />
         </Main>
       </section>
     </ThemeProvider>
