@@ -7,10 +7,12 @@ const StyledWrapper = styled.div`
 `;
 
 const StyledMain = styled.div`
-  display: block;
-  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
   margin: 0 auto;
   background: ${(props) => props.theme.background};
+  justify-content: space-around;
 `;
 
 const Main = ({ children }: any) => {

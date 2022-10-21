@@ -20,6 +20,7 @@ body {
     overflow-x: hidden;
     overflow-y: overlay;
     margin: 0;
+    font-family: "Lato";
 }
 
 &::-webkit-scrollbar {

@@ -8,6 +8,7 @@ const NavbarWrapper = styled.nav`
   background: ${(props) => props.theme.highlight};
   width: 100vw;
   height: 70px;
+  z-index: 100;
 `;
 
 const StyledNav = styled.ul`
