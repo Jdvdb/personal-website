@@ -1,9 +1,10 @@
-import React, { createContext, useContext } from "react";
+import React from "react";
 import { ThemeProvider } from "styled-components";
 import Main from "../components/Main";
 import Navbar from "../components/Navbar";
 import Hero from "../components/hero/Hero";
 import About from "../components/about/About";
+import Experience from "../components/experience/Experience";
 import GlobalStyle from "../styles/globalStyles";
 import { darkTheme, lightTheme } from "../styles/globalStyles";
 
@@ -20,7 +21,7 @@ const IndexPage = () => {
 
   if (colourTheme === "") {
     console.log("loading default");
-    return null;
+    // return null;
   }
   return (
     <ThemeProvider theme={colourTheme === "light" ? lightTheme : darkTheme}>
@@ -30,6 +31,7 @@ const IndexPage = () => {
         <Main>
           <Hero />
           <About />
+          <Experience />
           <input
             type="checkbox"
             checked={colourTheme === "light"}

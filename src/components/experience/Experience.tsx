@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import AboutCopy from "./AboutCopy";
+import ExperienceMenu from "./ExperienceMenu";
 import { StyledHeader } from "../general/TextHolding";
 
-const StyledAbout = styled.div`
+const StyledExperience = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,13 +12,13 @@ const StyledAbout = styled.div`
   margin: 0 auto;
 `;
 
-const About = () => {
+const Experience = () => {
   return (
-    <StyledAbout>
-      <StyledHeader>Who Are You Reading About?</StyledHeader>
-      <AboutCopy />
-    </StyledAbout>
+    <StyledExperience>
+      <StyledHeader>Experience</StyledHeader>
+      <ExperienceMenu />
+    </StyledExperience>
   );
 };
 
-export default About;
+export default Experience;
