@@ -5,6 +5,9 @@ import styled from "styled-components";
 const ButtonBackdrop = styled.div`
   height: 110px;
   width: 16vw;
+  @media (max-width: 768px) {
+    height: 80px;
+  }
 `;
 
 const Button = styled.div<{ activeButton: number; buttonId: number }>`

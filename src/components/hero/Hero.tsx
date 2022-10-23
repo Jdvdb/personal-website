@@ -9,6 +9,7 @@ const StyledHero = styled.div`
   height: 100vh;
   @media (max-width: 768px) {
     flex-direction: column;
+    width: 100vw;
   }
 `;
 

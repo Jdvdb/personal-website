@@ -19,10 +19,6 @@ const IndexPage = () => {
     setColourTheme(initialColour);
   }, []);
 
-  if (colourTheme === "") {
-    console.log("loading default");
-    // return null;
-  }
   return (
     <ThemeProvider theme={colourTheme === "light" ? lightTheme : darkTheme}>
       <GlobalStyle />

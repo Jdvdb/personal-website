@@ -21,6 +21,11 @@ body {
     overflow-y: overlay;
     margin: 0;
     font-family: "Lato";
+    line-height: 1.3;
+    @media (max-width: 768px) {
+        font-size: 8px;
+        line-height: 1.5;
+      }
 }
 
 &::-webkit-scrollbar {
