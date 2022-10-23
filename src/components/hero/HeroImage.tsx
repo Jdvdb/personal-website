@@ -1,3 +1,4 @@
+import { prependOnceListener } from "process";
 import React from "react";
 import styled from "styled-components";
 import Headshot from "../../images/HeadshotTall.png";
@@ -10,8 +11,10 @@ const ImageWrapper = styled.div`
   min-height: 27em;
   display: flex;
   justify-content: left;
-  // background-color: purple;
   align-items: center;
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const Image = styled.img`
@@ -22,6 +25,7 @@ const Image = styled.img`
 
 interface FloatingHighlightsProps {
   topVal: string;
+  leftVal: string;
 }
 
 const FloatingHighlights = styled.div<FloatingHighlightsProps>`
@@ -36,6 +40,11 @@ const FloatingHighlights = styled.div<FloatingHighlightsProps>`
   align-items: center;
   border-radius: 1em;
   box-shadow: 2px 4px 10px;
+  @media (max-width: 1200px) {
+    transform: translate(-7.5em, 0%);
+    top: 30em;
+    left: ${(props) => props.leftVal};
+  }
 `;
 
 const HighlightNumber = styled.p`
@@ -58,7 +67,7 @@ const HeroImage = () => {
   return (
     <HalfDiv>
       <ImageWrapper>
-        <FloatingHighlights topVal={"4em"}>
+        <FloatingHighlights topVal={"4em"} leftVal={"-45vw"}>
           <HighlightNumber>6+</HighlightNumber>
           <HighlightValue>
             Years
@@ -66,7 +75,7 @@ const HeroImage = () => {
             Developing
           </HighlightValue>
         </FloatingHighlights>
-        <FloatingHighlights topVal={"11em"}>
+        <FloatingHighlights topVal={"11em"} leftVal={"-10vw"}>
           <HighlightNumber>14</HighlightNumber>
           <HighlightValue>
             Languages
@@ -74,7 +83,7 @@ const HeroImage = () => {
             Learned
           </HighlightValue>
         </FloatingHighlights>
-        <FloatingHighlights topVal={"18em"}>
+        <FloatingHighlights topVal={"18em"} leftVal={"25vw"}>
           <HighlightNumber>23</HighlightNumber>
           <HighlightValue>
             Project Ideas

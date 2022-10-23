@@ -4,7 +4,7 @@ import HalfDiv from "../HalfDiv";
 
 const Header = styled.h1`
   color: ${(props) => props.theme.text};
-  font-size: 5.5em;
+  font-size: 5.2em;
   margin-left: 0.2em;
 `;
 
