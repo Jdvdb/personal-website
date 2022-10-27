@@ -16,7 +16,7 @@ const Button = styled.div<{ activeButton: number; buttonId: number }>`
       ? props.theme.secondary
       : props.theme.highlight};
   height: ${(props) =>
-    props.activeButton === props.buttonId ? "7em" : "1.6em"};
+    props.activeButton === props.buttonId ? "8em" : "1.6em"};
   color: ${(props) => props.theme.text};
   display: flex;
   width: 16vw;
@@ -27,6 +27,9 @@ const Button = styled.div<{ activeButton: number; buttonId: number }>`
   font-size: 1.5em;
   transition: margin 0.2s ease-in-out;
   justify-content: center;
+  @media (max-width: 500px) {
+    font-size: 8px;
+  }
   &:active {
     outline: none;
     border: none;

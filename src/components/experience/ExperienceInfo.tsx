@@ -14,6 +14,9 @@ const StyeldExperienceInfo = styled.div`
   max-width: 80vw;
   padding: 1em;
   border-radius: 1.5em;
+  @media (max-width: 450px) {
+    height: 70vh;
+  }
 `;
 
 interface ExperienceInfoProps {

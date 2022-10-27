@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 import Hero from "../components/hero/Hero";
 import About from "../components/about/About";
 import Experience from "../components/experience/Experience";
+import Projects from "../components/projects/Projects";
 import GlobalStyle from "../styles/globalStyles";
 import { darkTheme, lightTheme } from "../styles/globalStyles";
 
@@ -28,6 +29,7 @@ const IndexPage = () => {
           <Hero />
           <About />
           <Experience />
+          <Projects />
           <input
             type="checkbox"
             checked={colourTheme === "light"}
