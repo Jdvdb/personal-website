@@ -24,25 +24,25 @@ const ExperienceMenu = () => {
         <ExperienceButton
           activeButton={activeButton}
           buttonId={0}
-          buttonText="Metro"
+          buttonText="Telus"
           onClick={(e) => onClickButton(e, 0)}
         />
         <ExperienceButton
           activeButton={activeButton}
           buttonId={1}
-          buttonText="UofA"
+          buttonText="Brightside"
           onClick={(e) => onClickButton(e, 1)}
         />
         <ExperienceButton
           activeButton={activeButton}
           buttonId={2}
-          buttonText="Brightside"
+          buttonText="UofA"
           onClick={(e) => onClickButton(e, 2)}
         />
         <ExperienceButton
           activeButton={activeButton}
           buttonId={3}
-          buttonText="Telus"
+          buttonText="Metro"
           onClick={(e) => onClickButton(e, 3)}
         />
       </ButtonWrapper>
