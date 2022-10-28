@@ -7,7 +7,7 @@ import GithubLight from "../../images/GithubLight.png";
 import InstagramDark from "../../images/InstagramDark.png";
 import InstagramLight from "../../images/InstagramLight.png";
 import LinkedInDark from "../../images/LinkedInDark.png";
-import LinkedinLight from "../../images/LinkedinLight.png";
+import LinkedinLight from "../../images/LinkedInLight.png";
 import StravaDark from "../../images/StravaDark.png";
 import StravaLight from "../../images/StravaLight.png";
 
