@@ -11,11 +11,20 @@ const StyledFooterContent = styled.div`
   height: 100vh;
   width: 80vw;
   margin: 0 auto;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const Image = styled.img`
   height: 400px;
   width: 400px;
+  @media (max-width: 768px) {
+    height: 200px;
+    width: 200px;
+    margin: auto;
+  }
 `;
 
 const StyledTextHolder = styled.div`

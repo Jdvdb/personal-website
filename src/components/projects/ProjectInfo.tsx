@@ -7,8 +7,8 @@ import {
   StyledHeader,
 } from "../general/TextHolding";
 
-const StyeldProjectInfo = styled.div<{ floatSide: string }>`
-  height: 40vh;
+const StyeldProjectInfo = styled.div<{ floatSide: string; height: string }>`
+  max-height: ${(props) => props.height};
   background-color: ${(props) => props.theme.secondary};
   width: 60vw;
   border-radius: 1.5em;
@@ -20,7 +20,7 @@ const StyeldProjectInfo = styled.div<{ floatSide: string }>`
     margin: 4em auto;
     display: block;
     float: none;
-    width: 80vw;
+    width: 75vw;
   }
 `;
 
@@ -59,8 +59,12 @@ const ProjectInfo = ({ projectNumber }: ProjectInfoProps) => {
     "After my first year of university came to a close, a pandemic swept the nation and left me unsure of what a summer internship would look like. Since I thought this would be a temporary situation, I spent my summer in the Startup Edmonton Preflight program to learn about creating a Startup. I worked with a high school friend on a product called 'WeNote', a note sharing system designed for students. While the actual development was a basic landing page and a simple prototype, I learned about solution-oriented design and how to ask clients what they really want.",
     "As a final project for my intro computing science course, I was given an open ended project to create whatever we wanted with C++, Python, and/or Arduino's. I saw this as a great opportunity to apply some of the concepts I was learning in an intro to AI course and I decided to build a Monte Carlo Tree Search algorithm for a connect four agent. Since I used C++, I had to implement all the steps alongside a connect four agent. I ended up with an AI that could sometimes beat me and my friends at the game that ran in a terminal or on an Arduino with a touch screen.",
   ];
+  const projectHeights = ["30em", "32em", "40em", "40em"];
   return (
-    <StyeldProjectInfo floatSide={floatSide}>
+    <StyeldProjectInfo
+      floatSide={floatSide}
+      height={projectHeights[projectNumber]}
+    >
       <StyledSubHeader>{projectNames[projectNumber]}</StyledSubHeader>
       <br />
       <StyledLanguageLabel floatSide={floatSide}>
