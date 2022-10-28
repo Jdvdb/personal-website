@@ -5,6 +5,7 @@ const darkTheme: DefaultTheme = {
     secondary: '#2E2E2E',
     highlight: '#077187',
     text: '#FFEAAE',
+    link: '#F6F6F6',
 };
 
 const lightTheme: DefaultTheme = {
@@ -12,6 +13,7 @@ const lightTheme: DefaultTheme = {
     secondary: '#F6F6F6',
     highlight: '#ABA9BF',
     text: '#077187',
+    link: '#2E2E2E',
 };
 
 const GlobalStyle = createGlobalStyle`

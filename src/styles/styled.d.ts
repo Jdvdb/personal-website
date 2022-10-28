@@ -6,5 +6,6 @@ declare module 'styled-components' {
         secondary: string;
         highlight: string;
         text: string; 
+        link: string;
     }
 }

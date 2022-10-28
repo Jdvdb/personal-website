@@ -31,4 +31,15 @@ const StyledParagraph = styled.p<{ width: string }>`
   }
 `;
 
-export { StyledHeader, StyledSubHeader, StyledParagraph, StyledContentWrapper };
+const StyledLink = styled.a`
+  color: ${(props) => props.theme.link};
+  text-decoration: underline;
+`;
+
+export {
+  StyledHeader,
+  StyledSubHeader,
+  StyledParagraph,
+  StyledContentWrapper,
+  StyledLink,
+};
