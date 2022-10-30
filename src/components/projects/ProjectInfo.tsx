@@ -26,7 +26,6 @@ const StyledLanguageLabel = styled.div<{ floatSide: string }>`
   color: ${(props) => props.theme.text};
   border-radius: 1.5em;
   background-color: ${(props) => props.theme.background};
-  border: black 2px solid;
   font-size: 1.5em;
   margin: 0.2em 0;
   ${(props) =>
