@@ -1,4 +1,5 @@
 import { DefaultTheme, createGlobalStyle } from "styled-components"
+import "@fontsource/lato"
 
 const darkTheme: DefaultTheme = {
     background: '#0A0903',

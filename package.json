@@ -16,6 +16,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@fontsource/lato": "^4.5.10",
     "babel-plugin-styled-components": "^2.0.7",
     "gatsby": "^4.24.4",
     "gatsby-omni-font-loader": "^2.0.2",
