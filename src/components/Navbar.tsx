@@ -19,6 +19,7 @@ const StyledNav = styled.ul`
   justify-content: flex-end;
   color: ${(props) => props.theme.highlight};
   width: 75%;
+  text-align: center;
 `;
 
 const StyledNavItem = styled.li`
@@ -26,6 +27,8 @@ const StyledNavItem = styled.li`
   list-style-type: none;
   margin: 0 2.5vw;
   text-align: center;
+  justify-content: center;
+  width: 10vw;
 `;
 
 const StyledNavLink = styled.a`
@@ -33,6 +36,11 @@ const StyledNavLink = styled.a`
   list-style-type: none;
   text-decoration: none;
   color: ${(props) => props.theme.text};
+  transition: font-size 0.2s;
+  &:hover {
+    color: ${(props) => props.theme.link};
+    font-size: 1.2em;
+  }
 `;
 
 const StyledLogo = styled.img`
@@ -45,19 +53,21 @@ const StyledLogo = styled.img`
 const Navbar = () => {
   return (
     <NavbarWrapper>
-      <StyledLogo src={logo} />
+      <a href="/#hero">
+        <StyledLogo src={logo} />
+      </a>
       <StyledNav>
         <StyledNavItem>
-          <StyledNavLink>contact</StyledNavLink>
+          <StyledNavLink href="/#contact">contact</StyledNavLink>
         </StyledNavItem>
         <StyledNavItem>
-          <StyledNavLink>projects</StyledNavLink>
+          <StyledNavLink href="/#projects">projects</StyledNavLink>
         </StyledNavItem>
         <StyledNavItem>
-          <StyledNavLink>experience</StyledNavLink>
+          <StyledNavLink href="/#experience">experience</StyledNavLink>
         </StyledNavItem>
         <StyledNavItem>
-          <StyledNavLink>about</StyledNavLink>
+          <StyledNavLink href="/#about">about</StyledNavLink>
         </StyledNavItem>
       </StyledNav>
     </NavbarWrapper>

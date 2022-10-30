@@ -10,11 +10,14 @@ const StyledExperience = styled.div`
   height: 100vh;
   width: 80vw;
   margin: 0 auto;
+  @media (max-width: 768px) {
+    padding-top: 5em;
+  }
 `;
 
 const Experience = () => {
   return (
-    <StyledExperience>
+    <StyledExperience id="experience">
       <StyledHeader>Experience</StyledHeader>
       <ExperienceMenu />
     </StyledExperience>

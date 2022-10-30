@@ -11,6 +11,9 @@ const StyledFooter = styled.div`
   height: 100vh;
   width: 80vw;
   margin: 0 auto;
+  @media (max-width: 768px) {
+    padding-top: 3em;
+  }
 `;
 
 const StyledSubtext = styled.p`
@@ -21,7 +24,7 @@ const StyledSubtext = styled.p`
 
 const Footer = () => {
   return (
-    <StyledFooter>
+    <StyledFooter id="contact">
       <StyledHeader>Thanks For Stopping By!</StyledHeader>
       <FooterContent />
       <FooterSocials />

@@ -15,7 +15,7 @@ const StyledHero = styled.div`
 
 const Hero = () => {
   return (
-    <StyledHero>
+    <StyledHero id="hero">
       <Intro />
       <HeroImage />
     </StyledHero>

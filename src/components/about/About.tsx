@@ -10,11 +10,14 @@ const StyledAbout = styled.div`
   height: 100vh;
   width: 80vw;
   margin: 0 auto;
+  @media (max-width: 768px) {
+    padding-top: 3em;
+  }
 `;
 
 const About = () => {
   return (
-    <StyledAbout>
+    <StyledAbout id="about">
       <StyledHeader>Who Are You Reading About?</StyledHeader>
       <AboutCopy />
     </StyledAbout>

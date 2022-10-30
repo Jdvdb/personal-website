@@ -17,6 +17,9 @@ const lightTheme: DefaultTheme = {
 };
 
 const GlobalStyle = createGlobalStyle`
+html {
+    scroll-behavior: smooth;
+}
 body {
     background: ${props => props.theme.background};
     overflow-x: hidden;

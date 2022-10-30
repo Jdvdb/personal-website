@@ -9,11 +9,15 @@ const StyledProjects = styled.div`
   justify-content: center;
   width: 80vw;
   margin: 0 auto;
+  padding-top: 5em;
+  @media (max-width: 768px) {
+    padding-top: 8em;
+  }
 `;
 
 const Projects = () => {
   return (
-    <StyledProjects>
+    <StyledProjects id="projects">
       <StyledHeader>Projects</StyledHeader>
       <br />
       <ProjectInfo projectNumber={0} />
