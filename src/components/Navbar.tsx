@@ -9,6 +9,9 @@ const NavbarWrapper = styled.nav`
   width: 100vw;
   height: 70px;
   z-index: 100;
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const StyledNav = styled.ul`
@@ -40,6 +43,10 @@ const StyledNavLink = styled.a`
   &:hover {
     color: ${(props) => props.theme.link};
     font-size: 1.2em;
+    @media (max-width: 768px) {
+      font-size: 1em;
+      color: ${(props) => props.theme.text};
+    }
   }
 `;
 
@@ -54,7 +61,7 @@ const Navbar = () => {
   return (
     <NavbarWrapper>
       <a href="/#hero">
-        <StyledLogo src={logo} />
+        <StyledLogo src={logo} alt="My Logo" />
       </a>
       <StyledNav>
         <StyledNavItem>

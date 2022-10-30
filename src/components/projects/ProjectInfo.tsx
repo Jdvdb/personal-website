@@ -38,7 +38,6 @@ interface ProjectInfoProps {
 
 const ProjectInfo = ({ projectNumber }: ProjectInfoProps) => {
   const floatSide = projectNumber % 2 === 0 ? "left" : "right";
-  console.log(projectNumber % 2);
   const projectNames = [
     "GoDiffX",
     "SONiC On Demand",

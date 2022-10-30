@@ -91,7 +91,7 @@ const HeroImage = () => {
             Backlogged
           </HighlightValue>
         </FloatingHighlights>
-        <Image src={Headshot} />
+        <Image src={Headshot} alt="My Headshot" />
       </ImageWrapper>
     </HalfDiv>
   );

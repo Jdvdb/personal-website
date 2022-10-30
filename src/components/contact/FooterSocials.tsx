@@ -35,20 +35,28 @@ const FooterSocials = () => {
   return (
     <StyledFooterSocials>
       <a href="https://github.com/Jdvdb">
-        <StyledSocial src={theme === lightTheme ? GithubLight : GithubDark} />
+        <StyledSocial
+          src={theme === lightTheme ? GithubLight : GithubDark}
+          alt="Github Logo"
+        />
       </a>
       <a href="https://www.linkedin.com/in/jordan-van-den-bruel-324431144/">
         <StyledSocial
           src={theme === lightTheme ? LinkedinLight : LinkedInDark}
+          alt="LinkedIn Logo"
         />
       </a>
       <a href="https://www.instagram.com/jordan.vdb_/">
         <StyledSocial
           src={theme === lightTheme ? InstagramLight : InstagramDark}
+          alt="Instagram Logo"
         />
       </a>
       <a href="https://www.strava.com/athletes/39724994">
-        <StyledSocial src={theme === lightTheme ? StravaLight : StravaDark} />
+        <StyledSocial
+          src={theme === lightTheme ? StravaLight : StravaDark}
+          alt="Strava Logo"
+        />
       </a>
     </StyledFooterSocials>
   );

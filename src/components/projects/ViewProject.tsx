@@ -40,7 +40,10 @@ const ViewProject = ({ repo, floatSide }: ViewProjectProps) => {
   return (
     <StyledLinkWrapper href={repo}>
       <StyledViewProjectDiv floatSide={floatSide}>
-        <StyledIcon src={theme === lightTheme ? GithubLight : GithubDark} />
+        <StyledIcon
+          src={theme === lightTheme ? GithubLight : GithubDark}
+          alt="Github Icon"
+        />
         <StyledParagraph width="6em">View Project</StyledParagraph>
       </StyledViewProjectDiv>
     </StyledLinkWrapper>

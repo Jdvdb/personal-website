@@ -34,7 +34,7 @@ const StyledTextHolder = styled.div`
 const FooterContent = () => {
   return (
     <StyledFooterContent>
-      <Image src={Sketch} />
+      <Image src={Sketch} alt="Sketch of me" />
       <StyledParagraph width="38vw">
         I’m always looking for new opportunities to be a part of and people to
         meet up with! If you’d like to connect, feel free to find me on any of
