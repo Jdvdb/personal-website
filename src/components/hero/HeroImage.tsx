@@ -39,7 +39,7 @@ const FloatingHighlights = styled.div<FloatingHighlightsProps>`
   display: flex;
   align-items: center;
   border-radius: 1em;
-  box-shadow: 2px 4px 10px;
+  box-shadow: 2px 4px 10px ${(props) => props.theme.highlight};
   @media (max-width: 1200px) {
     transform: translate(-7.5em, 0%);
     top: 30em;

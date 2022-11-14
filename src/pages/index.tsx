@@ -1,7 +1,7 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
 import Main from "../components/Main";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/Navbar/Navbar";
 import Hero from "../components/hero/Hero";
 import About from "../components/about/About";
 import Experience from "../components/experience/Experience";
@@ -9,6 +9,7 @@ import Projects from "../components/projects/Projects";
 import Footer from "../components/contact/Footer";
 import GlobalStyle from "../styles/globalStyles";
 import { darkTheme, lightTheme } from "../styles/globalStyles";
+import type { HeadProps } from "gatsby";
 
 const IndexPage = () => {
   const [colourTheme, setColourTheme] = React.useState("");
@@ -25,24 +26,13 @@ const IndexPage = () => {
     <ThemeProvider theme={colourTheme === "light" ? lightTheme : darkTheme}>
       <GlobalStyle />
       <section>
-        <Navbar />
+        <Navbar handler={setColourTheme} />
         <Main>
           <Hero />
           <About />
           <Experience />
           <Projects />
           <Footer />
-          <input
-            type="checkbox"
-            checked={colourTheme === "light"}
-            onChange={(e) => {
-              setColourTheme(e.target.checked ? "light" : "dark");
-              const newTheme = e.target.checked ? "light" : "dark";
-              const root = window.document.documentElement;
-              localStorage.setItem("colour-mode", newTheme);
-              root.style.setProperty("--colour-mode", newTheme);
-            }}
-          />
         </Main>
       </section>
     </ThemeProvider>
@@ -50,3 +40,7 @@ const IndexPage = () => {
 };
 
 export default IndexPage;
+
+export function Head(props: HeadProps) {
+  return <title>Jordan Van Den Bruel | Developer</title>;
+}
