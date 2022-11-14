@@ -49,7 +49,6 @@ const Toggle = ({ handler }: ToggleProps) => {
   const theme = useTheme();
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
-    console.log("switch");
     handler(e.target.checked ? "light" : "dark");
     const newTheme = e.target.checked ? "light" : "dark";
     const root = window.document.documentElement;

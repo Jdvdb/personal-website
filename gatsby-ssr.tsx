@@ -45,6 +45,5 @@ exports.onRenderBody = ({
       name="description"
       content="Learn about a computing science student that's always looking to learn and ready to make a difference!"
     />,
-    <link key="icon" rel="icon" href="./src/images/Logo.png" />,
   ]);
 };

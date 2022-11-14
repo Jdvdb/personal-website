@@ -52,7 +52,7 @@ const StyledNavLink = styled.a`
 `;
 
 const StyledLogo = styled.img`
-  height: 60%;
+  height: 2.5em;
   width: auto;
   margin: 14px;
   margin-left: 20px;
