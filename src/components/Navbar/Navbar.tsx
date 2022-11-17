@@ -1,13 +1,16 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { useTheme } from "styled-components";
 import logo from "../../images/Logo.svg";
+import GithubDark from "../../images/GithubDark.png";
+import GithubLight from "../../images/GithubLight.png";
+import { lightTheme } from "../../styles/globalStyles";
 
 const NavbarWrapper = styled.nav`
   position: sticky;
   top: 0;
   background: ${(props) => props.theme.highlight};
   width: 100vw;
-  height: 70px;
+  height: 4.5em;
   z-index: 100;
   @media (max-width: 768px) {
     display: none;
@@ -23,15 +26,17 @@ const StyledNav = styled.ul`
   color: ${(props) => props.theme.highlight};
   width: 75%;
   text-align: center;
+  height: 4.5em;
+  margin: 0;
 `;
 
 const StyledNavItem = styled.li`
   float: right;
   list-style-type: none;
-  margin: 0 2.5vw;
-  text-align: center;
+  margin: 0 0.5em;
   justify-content: center;
-  width: 10vw;
+  width: 6em;
+  margin-top: 1.5em;
 `;
 
 const StyledNavLink = styled.a`
@@ -53,17 +58,38 @@ const StyledNavLink = styled.a`
 const StyledLogo = styled.img`
   height: 2.5em;
   width: auto;
-  margin: 14px;
-  margin-left: 20px;
+  margin: 1em;
+  transition: height 0.2s;
+  &:hover {
+    height: 2.8em;
+    width: auto;
+  }
+`;
+
+const StyledGithub = styled(StyledLogo)`
+  margin-top: -0.75em;
 `;
 
 const Navbar = () => {
+  const theme = useTheme();
   return (
     <NavbarWrapper>
       <a href="/#hero">
         <StyledLogo src={logo} alt="My Logo" />
       </a>
       <StyledNav>
+        <StyledNavItem>
+          <a
+            href="https://github.com/Jdvdb"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <StyledGithub
+              src={theme === lightTheme ? GithubLight : GithubDark}
+              alt="Github Link"
+            />
+          </a>
+        </StyledNavItem>
         <StyledNavItem>
           <StyledNavLink href="/#contact">Contact</StyledNavLink>
         </StyledNavItem>
