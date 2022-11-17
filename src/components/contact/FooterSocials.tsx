@@ -10,6 +10,8 @@ import LinkedInDark from "../../images/LinkedInDark.png";
 import LinkedinLight from "../../images/LinkedInLight.png";
 import StravaDark from "../../images/StravaDark.png";
 import StravaLight from "../../images/StravaLight.png";
+import ChessDark from "../../images/ChessDark.svg";
+import ChessLight from "../../images/ChessLight.svg";
 
 const StyledFooterSocials = styled.div`
   display: flex;
@@ -62,6 +64,16 @@ const FooterSocials = () => {
         <StyledSocial
           src={theme === lightTheme ? InstagramLight : InstagramDark}
           alt="Instagram Logo"
+        />
+      </a>
+      <a
+        href="https://www.chess.com/member/surfinjordy"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <StyledSocial
+          src={theme === lightTheme ? ChessLight : ChessDark}
+          alt="Strava Logo"
         />
       </a>
       <a
