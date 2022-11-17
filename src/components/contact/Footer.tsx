@@ -17,7 +17,7 @@ const StyledFooter = styled.div`
 `;
 
 const StyledSubtext = styled.p`
-  font-size: 0.5em;
+  font-size: 0.75em;
   color: ${(props) => props.theme.text};
   margin: 0 auto;
 `;

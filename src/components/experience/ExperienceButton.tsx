@@ -3,11 +3,8 @@ import styled from "styled-components";
 
 // needed so components bellow don't start shaking
 const ButtonBackdrop = styled.div`
-  height: 110px;
+  height: 8em;
   width: 16vw;
-  @media (max-width: 768px) {
-    height: 80px;
-  }
 `;
 
 const Button = styled.div<{ activeButton: number; buttonId: number }>`
@@ -41,7 +38,7 @@ const Button = styled.div<{ activeButton: number; buttonId: number }>`
   &:hover {
     margin-top: -1em;
     outline: none;
-    border-bottom: 4em solid
+    border-bottom: 6em solid
       ${(props) =>
         props.activeButton === props.buttonId
           ? props.theme.secondary

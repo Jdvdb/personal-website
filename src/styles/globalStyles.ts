@@ -12,9 +12,9 @@ const darkTheme: DefaultTheme = {
 const lightTheme: DefaultTheme = {
     background: '#E9E6FF',
     secondary: '#F6F6F6',
-    highlight: '#ABA9BF',
-    text: '#077187',
-    link: '#2E2E2E',
+    highlight: '#0BB7DA',
+    text: '#03313A',
+    link: '#141414',
 };
 
 const GlobalStyle = createGlobalStyle`

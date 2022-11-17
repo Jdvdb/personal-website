@@ -71,16 +71,16 @@ const Navbar = ({ handler }: NavbarProps) => {
       <Toggle handler={handler} />
       <StyledNav>
         <StyledNavItem>
-          <StyledNavLink href="/#contact">contact</StyledNavLink>
+          <StyledNavLink href="/#contact">Contact</StyledNavLink>
         </StyledNavItem>
         <StyledNavItem>
-          <StyledNavLink href="/#projects">projects</StyledNavLink>
+          <StyledNavLink href="/#projects">Projects</StyledNavLink>
         </StyledNavItem>
         <StyledNavItem>
-          <StyledNavLink href="/#experience">experience</StyledNavLink>
+          <StyledNavLink href="/#experience">Experience</StyledNavLink>
         </StyledNavItem>
         <StyledNavItem>
-          <StyledNavLink href="/#about">about</StyledNavLink>
+          <StyledNavLink href="/#about">About</StyledNavLink>
         </StyledNavItem>
       </StyledNav>
     </NavbarWrapper>

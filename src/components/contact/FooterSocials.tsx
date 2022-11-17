@@ -24,10 +24,10 @@ const StyledSocial = styled.img`
   width: 48px;
   height: 48px;
   margin: 2em;
-  @media (max-width: 768px) {
-    width: 24px;
-    height: 24px;
-  }
+  // @media (max-width: 768px) {
+  //   width: 24px;
+  //   height: 24px;
+  // }
 `;
 
 const FooterSocials = () => {

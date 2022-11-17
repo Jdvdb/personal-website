@@ -8,7 +8,7 @@ import {
 
 const StyeldExperienceInfo = styled.div`
   position: relative;
-  height: 50vh;
+  height: 30em;
   background-color: ${(props) => props.theme.secondary};
   top: -3em;
   max-width: 80vw;

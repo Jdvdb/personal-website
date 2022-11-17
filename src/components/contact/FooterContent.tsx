@@ -1,7 +1,9 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { useTheme } from "styled-components";
+import { lightTheme } from "../../styles/globalStyles";
 import { StyledParagraph, StyledLink } from "../general/TextHolding";
-import Sketch from "../../images/Sketch.png";
+import LightSketch from "../../images/LightSketch.svg";
+import DarkSketch from "../../images/DarkSketch.svg";
 
 const StyledFooterContent = styled.div`
   display: flex;
@@ -20,9 +22,9 @@ const StyledFooterContent = styled.div`
 const Image = styled.img`
   height: 400px;
   width: 400px;
+  max-height: 100vh;
+  max-width: 100vw;
   @media (max-width: 768px) {
-    height: 200px;
-    width: 200px;
     margin: auto;
   }
 `;
@@ -32,9 +34,13 @@ const StyledTextHolder = styled.div`
 `;
 
 const FooterContent = () => {
+  const theme = useTheme();
   return (
     <StyledFooterContent>
-      <Image src={Sketch} alt="Sketch of me" />
+      <Image
+        src={theme === lightTheme ? LightSketch : DarkSketch}
+        alt="Sketch of me"
+      />
       <StyledParagraph width="38vw">
         I’m always looking for new opportunities to be a part of and people to
         meet up with! If you’d like to connect, feel free to find me on any of
