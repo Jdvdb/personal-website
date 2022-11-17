@@ -3,27 +3,33 @@ import styled, { useTheme } from "styled-components";
 import { lightTheme } from "../../styles/globalStyles";
 
 const ToggleWrapper = styled.label`
-  display: inline-block;
-  width: 3em;
-  height: 1em;
+  margin-top: 2em;
+  width: 12em;
+  display: flex;
+  height: 3em;
+  font-size: 2em;
+  color: ${(props) => props.theme.text};
   transform: translate(0, -1.5em);
+  // background-color: red;
 `;
 
 const Switch = styled.div`
-  width: 2em;
-  height: 1em;
-  background: ${(props) => props.theme.background};
+  margin-left: 2em;
+  width: 4em;
+  height: 2em;
+  background: ${(props) => props.theme.text};
   position: relative;
-  border-radius: 1em;
+  border-radius: 3em;
+  transform: translate(0, -0.25em);
 
   &:before {
     transition: 300ms all;
     content: "";
     position: absolute;
-    width: 0.75em;
-    height: 0.75em;
-    border-radius: 0.75em;
-    background: ${(props) => props.theme.link};
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 1.5em;
+    background: ${(props) => props.theme.background};
     transform: translate(0, -50%);
     top: 50%;
     margin: 0 0.25em;
@@ -36,7 +42,7 @@ const Input = styled.input`
   width: 2em;
   &:checked + ${Switch} {
     &:before {
-      transform: translate(0.75em, -50%);
+      transform: translate(2em, -50%);
     }
   }
 `;
@@ -57,6 +63,7 @@ const Toggle = ({ handler }: ToggleProps) => {
   };
   return (
     <ToggleWrapper>
+      {theme == lightTheme ? "Light Mode" : "Dark Mode"}
       <Input
         type="checkbox"
         checked={theme === lightTheme ? true : false}

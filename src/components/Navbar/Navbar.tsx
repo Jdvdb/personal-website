@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import logo from "../../images/Logo.svg";
-import Toggle from "./Toggle";
 
 const NavbarWrapper = styled.nav`
   position: sticky;
@@ -58,17 +57,12 @@ const StyledLogo = styled.img`
   margin-left: 20px;
 `;
 
-interface NavbarProps {
-  handler(arg: string): void;
-}
-
-const Navbar = ({ handler }: NavbarProps) => {
+const Navbar = () => {
   return (
     <NavbarWrapper>
       <a href="/#hero">
         <StyledLogo src={logo} alt="My Logo" />
       </a>
-      <Toggle handler={handler} />
       <StyledNav>
         <StyledNavItem>
           <StyledNavLink href="/#contact">Contact</StyledNavLink>

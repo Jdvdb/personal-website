@@ -5,6 +5,7 @@ const HalfDiv = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   @media (max-width: 768px) {
     width: 100%;
   }

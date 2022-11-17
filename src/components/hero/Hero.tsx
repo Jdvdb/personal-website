@@ -13,10 +13,14 @@ const StyledHero = styled.div`
   }
 `;
 
-const Hero = () => {
+interface HeroProps {
+  handler(arg: string): void;
+}
+
+const Hero = ({ handler }: HeroProps) => {
   return (
     <StyledHero id="hero">
-      <Intro />
+      <Intro handler={handler} />
       <HeroImage />
     </StyledHero>
   );

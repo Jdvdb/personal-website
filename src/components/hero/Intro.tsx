@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
 import HalfDiv from "../HalfDiv";
+import Toggle from "./Toggle";
 
 const Header = styled.h1`
   color: ${(props) => props.theme.text};
@@ -8,7 +9,10 @@ const Header = styled.h1`
   margin-left: 0.2em;
 `;
 
-const Intro = () => {
+interface IntroProps {
+  handler(arg: string): void;
+}
+const Intro = ({ handler }: IntroProps) => {
   return (
     <HalfDiv>
       <Header>
@@ -16,6 +20,7 @@ const Intro = () => {
         <br />
         Van Den Bruel
       </Header>
+      <Toggle handler={handler} />
     </HalfDiv>
   );
 };

@@ -27,9 +27,9 @@ const IndexPage = () => {
     <ThemeProvider theme={colourTheme === "light" ? lightTheme : darkTheme}>
       <GlobalStyle />
       <section>
-        <Navbar handler={setColourTheme} />
+        <Navbar />
         <Main>
-          <Hero />
+          <Hero handler={setColourTheme} />
           <About />
           <Experience />
           <Projects />
