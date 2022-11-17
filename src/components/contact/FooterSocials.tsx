@@ -21,13 +21,13 @@ const StyledFooterSocials = styled.div`
 `;
 
 const StyledSocial = styled.img`
-  width: 48px;
-  height: 48px;
+  width: 3em;
+  height: 3em;
   margin: 2em;
-  // @media (max-width: 768px) {
-  //   width: 24px;
-  //   height: 24px;
-  // }
+  @media (max-width: 768px) {
+    width: 2em;
+    height: 2em;
+  }
 `;
 
 const FooterSocials = () => {

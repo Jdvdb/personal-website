@@ -26,6 +26,8 @@ const Image = styled.img`
   max-width: 100vw;
   @media (max-width: 768px) {
     margin: auto;
+    width: 60vw;
+    height: auto;
   }
 `;
 
