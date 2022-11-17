@@ -41,9 +41,9 @@ const FooterContent = () => {
         alt="Sketch of me"
       />
       <StyledParagraph width="38vw">
-        I’m always looking for new opportunities to be a part of and people to
-        meet up with! If you’d like to connect, feel free to find me on any of
-        the social medias shown bellow or send me an{" "}
+        I’m always looking for new opportunities to join and people to meet up
+        with! If you’d like to connect, feel free to find me on any of the
+        social medias shown bellow or send me an{" "}
         <StyledLink href="mailto:jdvandenbruel@gmail.com">
           email at jdvandenbruel@gmail.com!
         </StyledLink>
