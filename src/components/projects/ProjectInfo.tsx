@@ -3,12 +3,11 @@ import styled from "styled-components";
 import { StyledSubHeader, StyledParagraph } from "../general/TextHolding";
 import ViewProject from "./ViewProject";
 
-const StyeldProjectInfo = styled.div<{ floatSide: string; height: string }>`
-  max-height: ${(props) => props.height};
+const StyeldProjectInfo = styled.div<{ floatSide: string }>`
   background-color: ${(props) => props.theme.secondary};
   width: 60vw;
   border-radius: 1.5em;
-  padding: 1em;
+  padding: 1em 0.5em;
   margin: 2em 0;
   float: ${(props) => props.floatSide};
   text-align: ${(props) => props.floatSide};
@@ -52,7 +51,6 @@ const ProjectInfo = ({ projectNumber }: ProjectInfoProps) => {
     "After my first year of university came to a close, a pandemic swept the nation and left me unsure of what a summer internship would look like. Since I thought this would be a temporary situation, I spent my summer in the Startup Edmonton Preflight program to learn about creating a Startup. I worked with a high school friend on a product called 'WeNote', a note sharing system designed for students. While the actual development was a basic landing page and a simple prototype, I learned about solution-oriented design and how to ask clients what they really want.",
     "As a final project for my intro computing science course, I was given an open ended project to create whatever we wanted with C++, Python, and/or Arduino's. I saw this as a great opportunity to apply some of the concepts I was learning in an intro to AI course and I decided to build a Monte Carlo Tree Search algorithm for a connect four agent. Since I used C++, I had to implement all the steps alongside a connect four agent. I ended up with an AI that could sometimes beat me and my friends at the game that ran in a terminal or on an Arduino with a touch screen.",
   ];
-  const projectHeights = ["38em", "38em", "46em", "46em"];
   const projectRepos = [
     "https://github.com/beanbaginc/diffx",
     "https://github.com/Jdvdb/SONiC-On-Demand",
@@ -60,10 +58,7 @@ const ProjectInfo = ({ projectNumber }: ProjectInfoProps) => {
     "https://github.com/Jdvdb/Connect4MCTS",
   ];
   return (
-    <StyeldProjectInfo
-      floatSide={floatSide}
-      height={projectHeights[projectNumber]}
-    >
+    <StyeldProjectInfo floatSide={floatSide}>
       <StyledSubHeader>{projectNames[projectNumber]}</StyledSubHeader>
       <br />
       <StyledLanguageLabel floatSide={floatSide}>

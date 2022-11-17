@@ -7,8 +7,8 @@ const StyledExperience = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100vh;
   width: 80vw;
+  min-height: 100vh;
   margin: 0 auto;
   @media (max-width: 768px) {
     padding-top: 5em;

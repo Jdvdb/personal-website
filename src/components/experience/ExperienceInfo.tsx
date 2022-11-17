@@ -8,15 +8,11 @@ import {
 
 const StyeldExperienceInfo = styled.div`
   position: relative;
-  height: 30em;
   background-color: ${(props) => props.theme.secondary};
   top: -3em;
   max-width: 80vw;
-  padding: 1em;
+  padding: 0.5em;
   border-radius: 1.5em;
-  @media (max-width: 450px) {
-    height: 70vh;
-  }
 `;
 
 interface ExperienceInfoProps {
@@ -32,13 +28,13 @@ const ExperienceInfo = ({ activeButton }: ExperienceInfoProps) => {
     "July 2019 - August 2019",
   ];
   const copyArrayOne = [
-    "Over the course of 12 months, I primarily worked on two projects under the Reliability and Data Analytics team with a number of miscellaneous tasks throughout the year. The first project saw me take ownership of some NiFi data flows and bash scripts designed to load data into an oracle database.",
+    "Over the course of 12 months, I primarily worked on two projects under the Reliability and Data Analytics team with a number of miscellaneous tasks. The first project saw me take ownership of some NiFi data flows and bash scripts designed to load data into an oracle database.",
     "Brightside was a canadian fintech powered by ATB Financial that hoped to capitalize on a new market for the company. While the app may no longer be around, it had an exciting journey where it reached number one on the App Store in Alberta over the course of my internship.",
     "CMPUT 274 and 275 are advanced introduction courses for computing science offered to first year honours CS students and second year engineering students. After finishing both of these near the top of the class, I was brought on to be a teaching assistant the following semester.",
     "Metro Continuing Education is a part of Edmonton Public Schools and looks to provide additional learning opportunities to people of all ages. Following my high school graduation, my first job related to coding was as a summer camp instructor with Metro for elementary kids.",
   ];
   const copyArrayTwo = [
-    "The second centered around Google's Cloud Platform and setting up an environment for multiple teams to use. 80% of my time was spent on the first project where I had multithread the loading scripts, redesign the database schema, and onboard new members to the project.",
+    "The second centered around Google's Cloud Platform and setting up BigQuery and Looker. 90% of my time was spent on the first project where I multithreaded and modified data loading scripts, redesigned our database schema, and onboarded new team members to the project.",
     "As an intern, I got to try developing in almost all parts of the app. I worked on the frontend screen updates, backend referral code logic, and unit/UI automation testing. I also gained experience with agile environments and reviewing pull requests.",
     "My primary role has been providing office hours where I help students debug their coding assignments. This has improved my debugging abilities and helped grow my ability to help others with varying understandings of computing concepts.",
     "I taught 2 different programs; one was about creating basic games with javascript and another was using lua to create things in Roblox. This opportunity improved my communication abilities and was a great way to get my foot in the door as a developer.",

@@ -10,7 +10,6 @@ const StyledFooterContent = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 100vh;
   width: 80vw;
   margin: 0 auto;
   @media (max-width: 768px) {
@@ -20,10 +19,8 @@ const StyledFooterContent = styled.div`
 `;
 
 const Image = styled.img`
-  height: 400px;
-  width: 400px;
   max-height: 100vh;
-  max-width: 100vw;
+  max-width: 40vw;
   @media (max-width: 768px) {
     margin: auto;
     width: 60vw;

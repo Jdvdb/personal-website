@@ -16,17 +16,17 @@ const StyledFooterSocials = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 10em;
-  margin: 0 auto;
+  margin: 3em 0em;
 `;
 
 const StyledSocial = styled.img`
   width: 3em;
   height: 3em;
-  margin: 2em;
+  margin: 3em;
   @media (max-width: 768px) {
-    width: 2em;
-    height: 2em;
+    width: 1.5em;
+    height: 1.5em;
+    margin: 1.5em;
   }
 `;
 

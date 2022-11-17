@@ -25,7 +25,6 @@ const Image = styled.img`
 
 interface FloatingHighlightsProps {
   topVal: string;
-  leftVal: string;
 }
 
 const FloatingHighlights = styled.div<FloatingHighlightsProps>`
@@ -41,15 +40,12 @@ const FloatingHighlights = styled.div<FloatingHighlightsProps>`
   border-radius: 1em;
   box-shadow: 2px 4px 10px ${(props) => props.theme.highlight};
   @media (max-width: 1200px) {
-    // transform: translate(-7.5em, 0%);
-    // top: 30em;
-    // left: ${(props) => props.leftVal};
     display: none;
   }
 `;
 
 const HighlightNumber = styled.p`
-  font-size: 3em;
+  font-size: 2em;
   color: ${(props) => props.theme.text};
   margin: 0;
   margin-left: 0.5em;
@@ -57,7 +53,7 @@ const HighlightNumber = styled.p`
 `;
 
 const HighlightValue = styled.p`
-  font-size: 1.5em;
+  font-size: 1.2em;
   color: ${(props) => props.theme.text};
   margin: 0;
   margin-left: 0.5em;
@@ -68,7 +64,7 @@ const HeroImage = () => {
   return (
     <HalfDiv>
       <ImageWrapper>
-        <FloatingHighlights topVal={"4em"} leftVal={"-45vw"}>
+        <FloatingHighlights topVal={"4em"}>
           <HighlightNumber>6+</HighlightNumber>
           <HighlightValue>
             Years
@@ -76,7 +72,7 @@ const HeroImage = () => {
             Developing
           </HighlightValue>
         </FloatingHighlights>
-        <FloatingHighlights topVal={"11em"} leftVal={"-10vw"}>
+        <FloatingHighlights topVal={"11em"}>
           <HighlightNumber>14</HighlightNumber>
           <HighlightValue>
             Languages
@@ -84,13 +80,9 @@ const HeroImage = () => {
             Learned
           </HighlightValue>
         </FloatingHighlights>
-        <FloatingHighlights topVal={"18em"} leftVal={"25vw"}>
-          <HighlightNumber>23</HighlightNumber>
-          <HighlightValue>
-            Project Ideas
-            <br />
-            Backlogged
-          </HighlightValue>
+        <FloatingHighlights topVal={"18em"}>
+          <HighlightNumber>404</HighlightNumber>
+          <HighlightValue>Unknown Future Projects</HighlightValue>
         </FloatingHighlights>
         <Image src={Headshot} alt="My Headshot" />
       </ImageWrapper>

@@ -8,6 +8,7 @@ const StyledProjects = styled.div`
   flex-direction: column;
   justify-content: center;
   width: 80vw;
+  min-height: 100vh;
   margin: 0 auto;
   padding-top: 5em;
   @media (max-width: 768px) {

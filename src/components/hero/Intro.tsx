@@ -6,7 +6,7 @@ import Toggle from "./Toggle";
 const Header = styled.h1`
   color: ${(props) => props.theme.text};
   font-size: 5.2em;
-  margin-left: 0.2em;
+  margin-left: 0.5em;
 `;
 
 interface IntroProps {
