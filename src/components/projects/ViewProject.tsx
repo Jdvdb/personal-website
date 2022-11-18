@@ -38,7 +38,7 @@ interface ViewProjectProps {
 const ViewProject = ({ repo, floatSide }: ViewProjectProps) => {
   const theme = useTheme();
   return (
-    <StyledLinkWrapper href={repo}>
+    <StyledLinkWrapper href={repo} target="_blank" rel="noopener noreferrer">
       <StyledViewProjectDiv floatSide={floatSide}>
         <StyledIcon
           src={theme === lightTheme ? GithubLight : GithubDark}
