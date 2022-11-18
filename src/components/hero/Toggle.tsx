@@ -60,6 +60,10 @@ const Toggle = ({ handler }: ToggleProps) => {
     const root = window.document.documentElement;
     localStorage.setItem("colour-mode", newTheme);
     root.style.setProperty("--colour-mode", newTheme);
+    root.style.setProperty(
+      "--colour-background",
+      e.target.checked ? "#E9E6FF" : "#0A0903"
+    );
   };
   return (
     <ToggleWrapper>
