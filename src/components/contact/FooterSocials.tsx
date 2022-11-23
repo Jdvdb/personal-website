@@ -1,6 +1,6 @@
 import React from "react";
-import styled, {useTheme} from "styled-components";
-=import { lightTheme } from "../../styles/globalStyles";
+import styled, { useTheme } from "styled-components";
+import { lightTheme } from "../../styles/globalStyles";
 import GithubDark from "../../images/GithubDark.png";
 import GithubLight from "../../images/GithubLight.png";
 import InstagramDark from "../../images/InstagramDark.png";
