@@ -22,7 +22,9 @@ const IndexPage = () => {
 
     setColourTheme(initialColour);
   }, []);
-
+  if (colourTheme === "") {
+    return;
+  }
   return (
     <ThemeProvider theme={colourTheme === "light" ? lightTheme : darkTheme}>
       <GlobalStyle />
