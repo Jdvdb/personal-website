@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
-import HalfDiv from "../HalfDiv";
+import HalfDiv from "../general/HalfDiv";
 import Toggle from "./Toggle";
 
 const Header = styled.h1`

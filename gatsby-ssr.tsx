@@ -24,6 +24,8 @@ exports.onRenderBody = ({
 
           const colourMode = getBrowserColour();
 
+          window.localStorage.setItem("colour-mode", colourMode);
+
           const root = document.documentElement;
 
           root.style.setProperty("--colour-mode", colourMode);

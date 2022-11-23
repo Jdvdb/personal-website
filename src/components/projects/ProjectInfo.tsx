@@ -86,12 +86,11 @@ const ProjectInfo = ({ projectNumber }: ProjectInfoProps) => {
       As a final project for my intro computing science course, I was given an
       open ended assignment to create whatever I wanted with C++, Python, and/or
       Arduino's. I saw this as a great opportunity to apply some of the concepts
-      I was learning in an intro to AI course and I decided to build a Monte
-      Carlo Tree Search algorithm for a connect four agent. Since I used C++, I
-      had to implement all the steps for the algorithm within my own version of
-      a connect four game. I ended up with an AI that could sometimes beat me
-      and my friends at the game that ran in a terminal or on an Arduino with a
-      touch screen.
+      I was learning in an intro to AI course to build a Monte Carlo Tree Search
+      algorithm for a connect four agent. Since I used C++, I had to implement
+      all the steps for the algorithm within my own version of a connect four
+      game. I ended up with an AI that could usually beat me and my friends at
+      the game. The game ran in a terminal or on an Arduino with a touch screen.
     </StyledParagraph>,
   ];
   const projectRepos = [

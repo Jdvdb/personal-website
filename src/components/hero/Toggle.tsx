@@ -10,7 +10,6 @@ const ToggleWrapper = styled.label`
   font-size: 2em;
   color: ${(props) => props.theme.text};
   transform: translate(0, -1.5em);
-  // background-color: red;
 `;
 
 const Switch = styled.div`

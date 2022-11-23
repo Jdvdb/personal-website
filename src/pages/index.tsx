@@ -1,6 +1,6 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
-import Main from "../components/Main";
+import Main from "../components/general/Main";
 import Navbar from "../components/Navbar/Navbar";
 import Hero from "../components/hero/Hero";
 import About from "../components/about/About";

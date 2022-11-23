@@ -1,8 +1,7 @@
-import { prependOnceListener } from "process";
 import React from "react";
 import styled from "styled-components";
 import Headshot from "../../images/HeadshotTall.png";
-import HalfDiv from "../HalfDiv";
+import HalfDiv from "../general/HalfDiv";
 
 const ImageWrapper = styled.div`
   position: relative;

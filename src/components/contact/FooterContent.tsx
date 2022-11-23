@@ -28,10 +28,6 @@ const Image = styled.img`
   }
 `;
 
-const StyledTextHolder = styled.div`
-  width: 40vw;
-`;
-
 const FooterContent = () => {
   const theme = useTheme();
   return (

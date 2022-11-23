@@ -4,7 +4,6 @@ import { StyledParagraph } from "../general/TextHolding";
 import { lightTheme } from "../../styles/globalStyles";
 import GithubDark from "../../images/GithubDark.png";
 import GithubLight from "../../images/GithubLight.png";
-import { prependOnceListener } from "process";
 
 const StyledViewProjectDiv = styled.div<{ floatSide: string }>`
   float: ${(props) => props.floatSide};
