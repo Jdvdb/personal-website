@@ -23,10 +23,8 @@ const IndexPage = () => {
     setColourTheme(initialColour);
   }, []);
   if (colourTheme === "") {
-    console.log("null");
     return;
   }
-  console.log("main");
   return (
     <ThemeProvider theme={colourTheme === "light" ? lightTheme : darkTheme}>
       <GlobalStyle />
